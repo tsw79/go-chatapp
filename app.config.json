@@ -1,0 +1,26 @@
+{
+  "dir": {
+    "base": "C:/Dev/goLang/src/github.com/tsw79/chatapp",
+    "templates": "web/templates",
+    "uploads": "web/uploads", 
+    "avatars": "web/uploads/avatars" 
+  },
+  "url": {
+    "gravatar": "//www.gravatar.com/avatar/",
+    "templates": "web/templates"
+  },
+  "auth": {
+    "cookie": "auth"
+  },
+  "db": {
+    "host": "127.0.0.1",
+    "port": "3306",
+    "user": "root",
+	  "passwd": "",
+	  "database": "go_app"
+  },
+  "server": {
+    "host": "localhost",
+	  "port": "8080"
+  }
+}

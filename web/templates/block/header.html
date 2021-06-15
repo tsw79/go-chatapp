@@ -1,0 +1,45 @@
+    {{- define "header" -}}
+    <section class="section">
+      <!-- Left side -->
+      <button class="button is-light is-pulled-left">
+        <i data-feather="message-circle" color="green"></i> 
+        <span class="pl-1 is-uppercase has-text-weight-semibold is-size-4 is-family-code">ChatApp</span>
+      </button>
+      <!-- Right side -->
+      <div class="is-pulled-right">
+        <div class="dropdown is-right is-hoverable">
+          <div class="dropdown-trigger">
+            <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
+              <span class="icon is-small">
+                <i data-feather="menu"></i>
+              </span>
+            </button>
+          </div>
+          <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+            <div class="dropdown-content level">
+              <a href="/upload" class="dropdown-item level-left level-item">
+                <span class="icon is-small">
+                  <img src="{{.UserData.avatar_url}}" alt="avatar" class="mr-3" style="height:30px; width:auto; border-radius:4.8px;" />
+                </span> 
+                <span class="pl-2">
+                  <div class="has-text-grey-light is-size-7">Logged-in as:</div>
+                  <div class="has-text-weight-semibold is-uppercase">{{.UserData.name}}</div>
+                </span>
+              </a>
+              <hr class="dropdown-divider">
+              <a href="/chat" class="dropdown-item level-left level-item">
+                <span class="icon is-small">
+                  <i data-feather="message-square"></i>
+                </span> <span class="pl-2">Chat Room</span>
+              </a>
+              <a href="/logout" class="dropdown-item level-left level-item">
+                <span class="icon is-small">
+                  <i data-feather="log-out"></i>
+                </span> <span class="pl-2">Logout</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    {{- end -}}

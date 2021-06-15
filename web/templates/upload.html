@@ -1,0 +1,60 @@
+      {{- define "main" -}}
+      <section class="section">
+        <div class="container">
+          <section class="hero is-small is-primary">
+            <div class="hero-body">
+              <p class="title">Profile</p>
+            </div>
+          </section>
+          <section class="mt-5">
+            <!-- Form -->
+            <form class="form-horizontal" action="/uploader" enctype="multipart/form-data" method="post">
+              <input type="hidden" name="userid" value="{{.UserData.userid}}" />
+              <div class="field">
+                <label class="label" for="name">Username</label>
+                <div class="control">
+                  <span class="has-text-grey has-text-weight-semibold">{{.UserData.email}}</span>
+                </div>
+              </div>
+              <div class="field">
+                <label class="label" for="name">Name</label>
+                <div class="control">
+                  <span class="has-text-grey has-text-weight-semibold is-capitalized">{{.UserData.name}}</span>
+                </div>
+              </div>
+              <!-- File input -->
+              <div class="field">
+                <label class="label" for="avatar">Avatar</label>
+                <div class="is-grouped">
+                  <div class="is-pulled-left">
+                    <img src="{{.UserData.avatar_url}}" alt="avatar" class="mr-3" style="height:40px; width:auto; border-radius:4.8px;" />
+                  </div>
+                  <div class="file">
+                    <label class="file-label">
+                      <input class="file-input" type="file" name="avatarFile" onchange="if (this.files.length > 0) document.getElementById('filename-avatar').innerHTML = this.files[0].name;">
+                      <span class="file-cta">
+                        <span class="file-icon">
+                          <i data-feather="upload"></i>
+                        </span>
+                        <span class="file-label" id="filename-avatar">
+                          Choose your avatar…
+                        </span>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <!-- Save button -->
+              <div class="field is-grouped mt-5">
+                <div class="control">
+                  <button type="submit" class="button is-link">Save</button>
+                </div>
+                <div class="control">
+                  <button class="button is-link is-light">Cancel</button>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
+      </section>
+      {{- end -}}

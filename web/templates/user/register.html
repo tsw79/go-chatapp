@@ -1,0 +1,39 @@
+              {{- define "main" -}}
+              <form action="/register_s" method="POST" class="box">
+                <input type="hidden" name="token" value="">
+                <div class="field">
+                  <label for="" class="label">Name</label>
+                  <div class="control has-icons-left">
+                    <input type="text" name="name" placeholder="Full name" class="input" required>
+                    <span class="icon is-small is-left">
+                      <i data-feather="user"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="" class="label">Email</label>
+                  <div class="control has-icons-left">
+                    <input type="email" name="uname" placeholder="e.g. johndoe@gmail.com" class="input" required>
+                    <span class="icon is-small is-left">
+                      <i data-feather="mail"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="" class="label">Password</label>
+                  <div class="control has-icons-left">
+                    <input type="password" name="passwd" placeholder="*******" class="input" required>
+                    <span class="icon is-small is-left">
+                      <i data-feather="lock"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="field my-5">
+                  <button class="button is-fullwidth is-success">Submit</button>
+                </div>
+                <div class="mt-4">
+                  <span class="has-text-grey">Already have an account?</span> 
+                  <a href="/login" class="has-text-weight-bold has-text-info">Log in</a>
+                </div>
+              </form>
+              {{- end -}}

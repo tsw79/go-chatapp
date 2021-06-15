@@ -1,0 +1,32 @@
+    {{- define "main" -}}
+    <section class="welcome hero is-primary is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-centered">
+            <div 
+              class="column is-10-mobile is-7-tablet is-5-desktop is-5-widescreen  has-background-white has-text-black"  
+              style="border-radius:4.8px;"
+            > 
+              <img src="https://source.unsplash.com/s358rpxEALI/1600x600" style="border-top-left-radius:4.8px; border-top-right-radius:4.8px;">
+              <div class="p-3">
+                <button class="button">
+                  <span class="icon-text">
+                    <span class="icon">
+                      <i data-feather="message-circle" color="green"></i> 
+                    </span>
+                    <span class="pl-1 is-uppercase has-text-weight-semibold is-size-4 is-family-code">ChatApp</span>
+                  </span>
+                </button>
+                  <div class="is-size-3 has-text-weight-semibold py-5">Verify your account</div>
+                  <div>
+                    A verification email has been sent to ....... 
+                    Please check your mailbox to verify the account before you sign in.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    {{- end -}}

@@ -1,0 +1,6 @@
+# Ignore files related to API keys
+.env
+
+chatapp.db
+chatapp.exe
+log_util.go

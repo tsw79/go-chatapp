@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <title>{{.Page.Title}} - ChatApp</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="/css/app.auth.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <main>
+      <section class="hero is-primary is-fullheight">
+        <div class="hero-body">
+          <div class="container">
+            <div class="columns is-centered">
+              <div class="column is-full-mobile is-7-tablet is-5-desktop is-5-widescreen">
+                <button class="button mb-3 is-primary is-flex is-align-self-center">
+                  <span class="icon-text">
+                    <span class="icon">
+                      <i data-feather="message-circle" color="green"></i> 
+                    </span>
+                    <span class="pl-1 is-uppercase has-text-weight-semibold is-size-4 is-family-code">ChatApp</span>
+                  </span>
+                </button>
+                {{ template "main" . }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Scripts -->
+    <script>
+      feather.replace()
+    </script>
+  </body>
+</html>

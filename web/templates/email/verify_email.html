@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <title>Verify Email - ChatApp</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="/css/app.auth.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <main>
+
+    <!---- template "main" . -->
+
+    <section class="hero is-primary is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-centered has-background-white has-text-black p-3" style="border-radius:4.8px;">
+            <div class="column is-10-mobile is-7-tablet is-5-desktop is-5-widescreen">
+              <button class="button">
+                <span class="icon-text">
+                  <span class="icon">
+                    <i data-feather="message-circle" color="green"></i> 
+                  </span>
+                  <span class="pl-1 is-uppercase has-text-weight-semibold is-size-4 is-family-code">ChatApp</span>
+                </span>
+              </button>
+              <div>
+                <div class="is-size-2 has-text-weight-semibold">Welcome</div>
+                <div class="my-3">
+                  <img src="https://source.unsplash.com/AT5vuPoi8vc/1600x600">
+                </div>
+                <div>
+                  Hi {{.Name}}. We're happy you signed up for ChatApp. To get you started, please confirm your email address. 
+                </div>
+                <div>
+                  <button class="button is-success is-rounded mt-3">Verify</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    </main>
+    <!-- Scripts -->
+    <script>
+      feather.replace()
+    </script>
+  </body>
+</html>
