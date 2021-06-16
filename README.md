@@ -1,5 +1,5 @@
-<p style="padding: 3px;">
-  <img src="./web/img/Screenshot1.png" width="300px" height="auto" style="border-radius: 3.8px;" />
+<p style="padding: 3px; border: 1px solid #ccc; border-radius: 2.8px;">
+  <img src="./web/img/Screenshot1.png" />
 </p>
 
 # ChatApp - A Go chat application
